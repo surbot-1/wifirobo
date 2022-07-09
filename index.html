@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>  
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<body style= 'width:auto; height:auto; margin:0px; padding:0px; background:#E0E0E0'> 
+
+  <div id='div1' style='background-color:#00A0A0; width:auto; height:auto; font-size:20px; font-weight:bold; text-align:center; color:#FFFFFF;'>Robot Car
+  </div>
+  <div id='div2' style='text-align:center;'>
+  </div>
+  <div id='div3' style='display:flex; justify-content:center; align-items:center; margin-top:20px;'> 
+  <div id='div4'>
+   <input type='button' id='forward' value='F' onclick='forward()' style='margin-left:80px; margin-top:0px; width:40px; height:40px; background-color:#A0A0E0; color:#FFFFFF;'><br>
+   <input type='button' id='left' value='L' onclick='left()' style='margin-left:0px; margin-top:40px; width:40px; height:40px; background-color:#A0A0E0; color:#FFFFFF;'> 
+   <input type='button' id='stop' value='S' onclick='stop()' style='margin-left:40px; margin-top:40px; width:40px; height:40px; background-color:#A0A0E0; color:#FFFFFF;'>
+    <input type='button' id='right' value='R' onclick='right()' style='margin-left:40px; margin-top:40px; width:40px; height:40px; background-color:#A0A0E0; color:#FFFFFF;'><br>
+    <input type='button' id='backward' value='B' onclick='backward()' style='margin-left:80px; margin-top:40px; width:40px; height:40px; background-color:#A0A0E0; color:#FFFFFF;'> 
+    </div>
+   </div>  
+
+    <script> document.getElementById("div2").innerHTML="Control the Robot Car";
+   </script> 
+         
+   <script>
+   function forward() {window.location.href='/forward'}
+   function backward() {window.location.href='/backward'}  
+   function left() {window.location.href='/left'} 
+   function right() {window.location.href='/right'} 
+   function stop() {window.location.href='/stop'} 
+   </script> 
+                        
+</body>
+</html> 
